@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 public class Word {
     /** Default translation for the word */
     private String mDefaultTranslation;
-
-    /** Miwok translation for the word */
     private String mMiwokTranslation;
+    private int mImageResourceId=0;
+    private int mAudioResourceId;
 
     /**
      * Create a new Word object.
@@ -21,6 +21,20 @@ public class Word {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
+
+    public Word(String defaultTranslation, String miwokTranslation,int AudioResourceId) {
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+        mAudioResourceId=AudioResourceId;
+    }
+
+    public Word(String defaultTranslation, String miwokTranslation,int ImageResourceId, int AudioResourceId) {
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+        mImageResourceId=ImageResourceId;
+        mAudioResourceId=AudioResourceId;
+    }
+
 
     /**
      * Get the default translation of the word.
@@ -35,5 +49,15 @@ public class Word {
     public String getMiwokTranslation() {
         return mMiwokTranslation;
     }
+
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
+    public int getAudioResourceId() {
+        return mAudioResourceId;
+    }
+
+
 }
 

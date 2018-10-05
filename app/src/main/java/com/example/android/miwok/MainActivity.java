@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void openFamilyMebersList(View view) {
         Intent i = new Intent(MainActivity.this, FamilyMembersActivity.class);
         startActivity(i);
@@ -95,4 +96,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, PhrasesActivity.class);
         startActivity(intent);
     }
+
 }

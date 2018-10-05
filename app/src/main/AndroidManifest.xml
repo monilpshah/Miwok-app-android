@@ -35,15 +35,15 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FamilyMembersActivity"
-            android:label="Numbers"
+            android:label="Family Members"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ColorsActivity"
-            android:label="Numbers"
+            android:label="Colors"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PhrasesActivity"
-            android:label="Numbers"
+            android:label="Phrases"
             android:parentActivityName=".MainActivity" />
     </application>
 
